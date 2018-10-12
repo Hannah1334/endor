@@ -1,0 +1,350 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script> 
+
+<style>
+body{
+background-image: url('') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+background-color:#111111;
+}
+
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #4D4D4D;}
+
+#box1 {
+position:absolute;
+background-image: url('https://i.imgur.com/OOuWIfL.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+width:25%;
+height:30%;
+left:32%;
+top:18%;
+}
+
+#box2 {
+position:absolute;
+background-image: url('https://i.imgur.com/sDoRdsI.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+width:10%;
+height:30%;
+left:58%;
+top:18%;
+}
+
+#box3 {
+position:absolute;
+background-image: url('https://i.imgur.com/GtYqkhS.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+width:10%;
+height:30%;
+left:32%;
+top:50%;
+}
+
+#box4 {
+position:absolute;
+background-image: url('https://i.imgur.com/xQBYk4d.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+width:25%;
+height:30%;
+left:43%;
+top:50%;
+}
+
+#holder {
+position:absolute;
+background-color:#111111;
+width:16%;
+height:20%;
+top:39%;
+left:42%;
+}
+
+#textbox1 {
+position:absolute;
+background-color:#252525;
+overflow:auto;
+width:12%;
+height:30%;
+left:19%;
+top:18%;
+}
+
+#textbox2 {
+position:absolute;
+background-color:#252525;
+overflow:auto;
+width:12%;
+height:30%;
+left:19%;
+top:50%;
+}
+
+#textbox3 {
+position:absolute;
+background-color:#252525;
+overflow:auto;
+width:12%;
+height:30%;
+left:69%;
+top:18%;
+}
+
+#textbox4 {
+position:absolute;
+background-color:#252525;
+overflow:auto;
+width:12%;
+height:30%;
+left:69%;
+top:50%;
+}
+
+#titlebox {
+position:absolute;
+background-color:#2F2F2F;
+border-bottom:2px dashed #4D4D4D;
+width:100%;
+height:15%;
+top:0%;
+left:0%;
+}
+
+#text {
+position:absolute;
+padding:2%;
+width:86%;
+height:72%;
+top:20%;
+left:5%;
+color:#ffffff;
+font-size:1.5vh;
+font-family: 'Crimson Text', serif;
+}
+
+#text1 {
+position:absolute;
+padding:2%;
+width:86%;
+height:72%;
+top:20%;
+left:5%;
+color:#ffffff;
+font-size:1.5vh;
+font-family: 'Crimson Text', serif;
+}
+
+#title {
+position:absolute;
+width:94%;
+height:70%;
+left:3%;
+top:15%;
+color:#555555;
+text-align:center;
+font-size:3vh;
+font-family: 'Charmonman', cursive;
+line-height:1.5;
+}
+
+#tabbox1 {
+position:absolute;
+background-image: url('https://i.imgur.com/EjyUhGw.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+width:14%;
+height:7%;
+top:41%;
+left:43%;
+}
+
+#tabbox2 {
+position:absolute;
+background-image: url('https://i.imgur.com/yJc50U8.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+width:14%;
+height:7%;
+top:50%;
+left:43%;
+}
+
+.tabs{
+display:block;
+opacity:1;
+width:100%;
+height:100%;
+text-align:center;
+color:#cccccc;
+font-family: 'PT Sans Narrow', sans-serif;
+background-color:rgba(17, 17, 17, 0.69);
+text-transform:uppercase;
+letter-spacing:10px;
+font-size:3vh;
+line-height:2.2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+opacity:0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4 {
+display: none;
+}
+
+i {
+color:#666666;
+}
+
+a {
+color:#95B9C7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a:hover {
+color:#666666;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+b {
+color:#757575;
+text-transform:uppercase;
+font-family: 'PT Sans Narrow', sans-serif;
+}
+</style>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Charmonman|Crimson+Text|PT+Sans+Narrow" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('box2').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('box3').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<html>
+
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+<div id="box4"></div>
+<div id="holder"></div>
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">Endor</span>
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">Dalah</span>
+</div>
+
+<div id="textbox1">
+<div id="titlebox">
+<div id="title">
+History
+</div>
+</div>
+<div id="text">
+Work in progress.
+</div>
+</div>
+<div id="textbox2">
+<div id="titlebox">
+<div id="title">
+Attributes
+</div>
+</div>
+<div id="text">
+<b>Appearance</b><br>
+Standing at only seven inches above five feet in height, Endor is fairly average in size for a female of her species. The Balaurrude is of youthful age among her people, comparable to that of the average twenty-three-year-old human both in appearance and overall development. Many long years of the rock climbing and spelunking that remains a core part of her race’s daily lives have toned her figure to be very fit. Soft pale skin gently and evenly stretches over layers of hard sinew, just built up enough to be barely visible under the otherwise smooth flesh. A defined hourglass figure, with plentiful shape in her bosom and rear, marks obvious femininity in her build, fitting well with the soft vulnerable features of an honest face. Big blue eyes remain nestled above rounded cheeks and a narrow chin. A slender nose and full lips accent the natural structure to create a pretty picture.
+<br>
+Nails stretch a couple of centimeters further from her fingertips and toetips, providing natural sharp claws that are useful when climbing. All Balaurrude possess a pair of horns, the styles of which differ from person to person. In Endor’s case they are attached to her skull at the sides of her head, protruding out a couple of short inches beyond her thick white hair then changing direction. The ends that frame the sides of her face around eye level are sharpened, but most of the length grows backwards behind her, sticking out almost half a foot past the back of her head. She also has a long scaled tail that protrudes from her back at the base of her spine, growing like an armored extension and measuring a solid five feet in length. In addition to the white horns and tail, ivory scales cover patches of her vulnerable soft flesh, often sinking back under her skin and growing out in other areas to suit her needs. 
+<br><br>
+<b>Attire</b><br>
+She has different preferences depending on where she'll be spending most of her time. If the Guardian is aboveground she dresses like mundane human locals, preferring soft pastel colors to match her natural pigment. Jeans and skirts with blouses make for her favorite outfits, although there are a few frilly dresses she enjoys as well.
+<br>
+When among her own tribe underground she "dresses" as they do. The Balaurrude prefer to keep themselves as free from the restraints of fabric as possible, covering private, unseemly, or vulnerable parts of their bodies with scaled growths.
+<br>
+Coexisting with the mundane civilization that was built above their home means hiding their inhuman attributes in any way they can. These creatures often wear pendants which coat them in magic and hide any draconic attributes they possess from the untrained eye. 
+<br><br>
+<b>Personality</b><br>
+Positives:<br>
+<li>Kind</li>
+<li>Compassionate</li>
+<li>Sympathetic</li>
+<li>Determined</li>
+<br>
+Negatives:<br>
+<li>Naive</li>
+<li>Stubborn</li>
+<li>Squeamish</li>
+<li>Gullible</li>
+<br>
+</div>
+</div>
+<div id="textbox3">
+<div id="titlebox">
+<div id="title">
+Racials
+</div>
+</div>
+<div id="text">
+<p align="center"><u><b>The Balaurrude</u></b></p>
+Work in progress.
+<br>
+</div>
+</div>
+<div id="textbox4">
+<div id="titlebox">
+<div id="title">
+Magic
+</div>
+</div>
+<div id="text1">
+<p align="center"><u><b>Stigmatism</b></u></p>
+<i>"Stigmatism is the art of creating Auras around your body based on spirits that you form a close connection to. Stigmatism auras are generally related to an animal, and take on its properties (for example, a Hawk aura would grant increased vision, and faster movement), but they can take on the form of legendary human spirits as well. Each spirit that you use to create an aura from must be attached to the physical world via items that the mage holds on their person."</i>
+<p align="right">-- <a target="_blank" href="http://ulreich.weebly.com/the-magic-trees.html">Ulreich University</a></p>
+<br>
+<p align="center"><u><b>Faith</b></u></p>
+<i>"Faith mages are a completely support-oriented group of mages. Those who practice Faith hold the ability to mend wounds, lift curses and illnesses, bestow temporary magical boons to their allies, or create Holy Equipment which provide a permanent boon. Faith mages are also highly skilled in defensive arts, and are capable of erecting magical barriers. However, faith mana is completely non hostile, and no faith spell can ever cause harm to another being (unless faith magic specifically harms them)."</i>
+<p align="right">-- <a target="_blank" href="http://ulreich.weebly.com/the-magic-trees.html">Ulreich University</a></p>
+<br>
+<p align="center"><u><b>Caligraphism</b></u></p>
+<i>"Much like enchantment and ritualism, a calligraphist mage can access certain aspects of other trees with their spells. All calligraphists start with a specialized medium; an ancient tome in which they channel their magic through as they fill pages with an ancient text. Each incantation that a Calligraphist creates is written inside of the book and amplified, allowing them to wield magic higher than their actual rank. The downside to this is that the spell must be recited out loud, creating high cast times as a trade off for high damage. With each rank purchased, a Calligraphist becomes more fluent in the ancient language, allowing them to create more advanced and intricate spells."</i>
+<p align="right">-- <a target="_blank" href="http://ulreich.weebly.com/the-magic-trees.html">Ulreich University</a></p>
+<br>
+</div>
+</div>
+
+<div id="tab1">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/JkTqigW.jpg"/>
+</div>
+<div id="tab2">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/APu2yOP.jpg"/>
+</div>
+<div id="tab3">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/7kbHCCS.png"/>
+</div>
+<div id="tab4">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/RlgL0Eq.jpg"/>
+</div>
+
+<embed style="height: 0%; width: 0%;"src="Endor.mp3" autostart="true" loop="true">
+
+</html>
